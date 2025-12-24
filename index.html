@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minecraft Server Landing Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="hero">
+        <div class="container">
+            <h1 id="server-name">DECKEN YT</h1>
+            <p id="server-tagline">Survive • Build • Create</p>
+            <div class="server-details">
+                <p>Server IP: <span id="server-ip">play.yourserver.com</span> <button id="copy-ip">Copy</button></p>
+                <p>Minecraft Version: <span id="mc-version">Java & Bedrock</span></p>
+                <p>Status: <span id="server-status">Checking...</span></p>
+                <p>Players: <span id="player-count">0 / 100</span></p>
+            </div>
+        </div>
+    </header>
+
+    <section id="server-status-section" class="section">
+        <div class="container">
+            <h2>Server Status</h2>
+            <div id="status-display">
+                <!-- Status will be populated by JS -->
+            </div>
+        </div>
+    </section>
+
+    <section id="features" class="section">
+        <div class="container">
+            <h2>Features</h2>
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <span class="icon">⚔️</span>
+                    <h3>Survival SMP</h3>
+                    <p>Experience the ultimate survival multiplayer adventure.</p>
+                </div>
+                <div class="feature-card">
+                    <span class="icon">🏰</span>
+                    <h3>Claims & Protection</h3>
+                    <p>Protect your builds with our land claiming system.</p>
+                </div>
+                <div class="feature-card">
+                    <span class="icon">💰</span>
+                    <h3>Economy System</h3>
+                    <p>Buy, sell, and trade in our vibrant economy.</p>
+                </div>
+                <div class="feature-card">
+                    <span class="icon">🛒</span>
+                    <h3>Kits & Ranks</h3>
+                    <p>Unlock exclusive kits and ranks to enhance your gameplay.</p>
+                </div>
+                <div class="feature-card">
+                    <span class="icon">🧑‍🤝‍🧑</span>
+                    <h3>Friendly Community</h3>
+                    <p>Join a welcoming community of players.</p>
+                </div>
+                <div class="feature-card">
+                    <span class="icon">🔒</span>
+                    <h3>Anti-Cheat Protection</h3>
+                    <p>Play fair with our advanced anti-cheat system.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="ranks" class="section">
+        <div class="container">
+            <h2>Ranks & Plans</h2>
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <h3>VIP</h3>
+                    <div class="price">₹500</div>
+                    <ul>
+                        <li>Exclusive VIP commands</li>
+                        <li>Priority support</li>
+                        <li>Bonus items</li>
+                    </ul>
+                    <button class="buy-btn">Buy Now</button>
+                </div>
+                <div class="pricing-card">
+                    <h3>ELITE</h3>
+                    <div class="price">₹1000</div>
+                    <ul>
+                        <li>All VIP perks</li>
+                        <li>Custom homes</li>
+                        <li>Monthly rewards</li>
+                    </ul>
+                    <button class="buy-btn">Buy Now</button>
+                </div>
+                <div class="pricing-card">
+                    <h3>CUSTOM</h3>
+                    <div class="price">₹2000</div>
+                    <ul>
+                        <li>All ELITE perks</li>
+                        <li>Personalized features</li>
+                        <li>24/7 support</li>
+                    </ul>
+                    <button class="buy-btn">Buy Now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="voting" class="section">
+        <div class="container">
+            <h2>Vote for Rewards</h2>
+            <p>Vote daily to get in-game rewards and help our server grow!</p>
+            <button id="vote-btn" class="cta-btn">Vote Now</button>
+            <p>Votes this month: <span id="vote-count">1234</span></p>
+        </div>
+    </section>
+
+    <section id="discord" class="section">
+        <div class="container">
+            <h2>Join Our Discord</h2>
+            <p>Join our community and stay updated!</p>
+            <button id="discord-btn" class="cta-btn">Join Discord</button>
+            <iframe
+  src="https://discord.com/widget?id=1338926100465848484&theme=dark"
+  width="350"
+  height="500"
+  allowtransparency="true"
+  frameborder="0"
+  sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts">
+</iframe>
+
+
+        </div>
+    </section>
+
+    <section id="gallery" class="section">
+        <div class="container">
+            <h2>Gallery</h2>
+            <div class="gallery-grid">
+                <img src="https://via.placeholder.com/300x200?text=Server+Build+1" alt="Server Build 1">
+                <img src="https://via.placeholder.com/300x200?text=Server+Build+2" alt="Server Build 2">
+                <img src="https://via.placeholder.com/300x200?text=Server+Build+3" alt="Server Build 3">
+                <img src="https://via.placeholder.com/300x200?text=Server+Build+4" alt="Server Build 4">
+            </div>
+        </div>
+    </section>
+
+    <section id="rules" class="section">
+        <div class="container">
+            <h2>Server Rules</h2>
+            <div class="rules-list">
+                <p>1. No griefing or stealing.</p>
+                <p>2. Respect all players.</p>
+                <p>3. No cheating or hacking.</p>
+                <p>4. Follow staff instructions.</p>
+                <p>5. Have fun!</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="how-to-join" class="section">
+        <div class="container">
+            <h2>How to Join</h2>
+            <ol>
+                <li>Open Minecraft.</li>
+                <li>Click Multiplayer.</li>
+                <li>Add Server.</li>
+                <li>Paste IP: <strong id="join-ip">play.yourserver.com</strong></li>
+                <li>Join & Play!</li>
+            </ol>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 DECKEN YT. All rights reserved.</p>
+            <div class="social-links">
+                <a href="https://discord.gg/9CrwuSNubU " class="discord-link" target="_blank">Discord</a>
+                <a href="#" class="instagram-link">Instagram</a>
+                <a href="https://www.youtube.com/@Decken_YT" target="_blank">YouTube</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
