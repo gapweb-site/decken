@@ -1,5 +1,5 @@
 // Configuration - Edit these values
-const SERVER_IP = 'Gamerytsmp.aternos.me'; // Change this to your actual server IP
+const SERVER_IP = 'mc.gapweb.site'; // Change this to your actual server IP
 const DISCORD_INVITE = 'https://discord.gg/9CrwuSNubU'; // Change to your Discord invite
 const VOTE_URL = 'https://vote.yoursite.com'; // Change to your voting site
 const STORE_URL = 'https://store.yoursite.com'; // Change to your store URL
@@ -49,7 +49,7 @@ buyBtns.forEach(btn => {
 // Fetch server status
 async function fetchServerStatus() {
     try {
-        const response = await fetch(`https://api.mcsrvstat.us/2/premium-in01.solohost.fun:25576
+        const response = await fetch(`https://api.mcsrvstat.us/2/mc.gapweb.site:45261
 `);
         const data = await response.json();
 
